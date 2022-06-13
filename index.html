@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/index.css">
+
+    <title>Sonambula Cine</title>
+</head>
+<body>
+    <header>
+        <nav class="nav__header">
+            <a class="nav__logo" href="./index.html">
+                <picture>
+                        <img src="./IMG/Sonámbulapng.png" class="logo" alt="Ojos super puestos logo de sonambula cine">
+                </picture>
+            </a>
+            <ul class="navegacion">
+                <li class="navegacion__item">
+                    <a class="navegacion__link" href="./PAGES/Novedades.html">Novedades</a>
+                </li>
+                <li class="navegacion__item">
+                    <a class="navegacion__link" href="./PAGES/Enfoque.html">Enfoque</a>
+                </li>
+                <li class="navegacion__item">
+                    <a class="navegacion__link" href="./PAGES/Nosotras.html">Nosotras</a>
+                </li>
+                <li class="navegacion__item">
+                    <a class="navegacion__link" href="./PAGES/Hacemos.html">Hacemos</a>
+                </li>
+                <li class="navegacion__item">
+                    <a class="navegacion__link" href="./PAGES/Contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <section id="novedades"> <!--NOVEDADES-->
+        <div class="noticias">
+            <img class= "novedades__img" src="./IMG/home S.PNG" alt="Noticias">
+        </div>
+    </section>
+    <section id="enfoque"> <!--ENFOQUE-->
+        <h2 class="section__titulo">ENFOQUE</h2>
+        <div class="contenedor">
+            <div class="detalle">
+                <article class="detalle__texto">
+                    <p class="detalle__descripcion">Breve Detallada de la productora</p>
+                </article>
+            </div>
+            <div class="loop">
+                <article class="loop__logo">
+                    <img class= "loop__video" src="./IMG/logoo video.JPG" alt="Video logo sonambula" >
+                </article>
+            </div>
+        </div>
+    </section>
+    <section id="nosotras"> <!--NOSOTRAS-->
+        <h2 class="section__titulo">NOSOTRAS</h2>
+        <div class="contenedor">
+            <div class="equipo">
+                <article class="equipo__ella">
+                     <img class="equipo__img" src="./IMG/SaraB&W.jpg" alt="foto de sara">
+                     <h3 class="equipo__titulo">SARA ÁLVAREZ</h3>
+                     <p class="equipo__profesion">Diseñadora Multimedial e investigadora</p>
+                 </article>
+             </div>
+             <div class="equipo">
+                 <article class="equipo__ella">
+                     <img class="equipo__img" src="./IMG/hannahB&W.jpg" alt="foto de hannah" >
+                     <h3 class="equipo__titulo">HANNAH CIRO</h3>
+                     <p class="equipo__profesion">Diseñadora de Imagen y Sonido </p>
+                 </article>
+             </div>
+        </div>
+    </section>
+    <section id="hacemos" class="hacemos__contenedor"> <!--HACEMOS-->
+        <h2 class="section__titulo">HACEMOS</h2>
+        <div class="hacemos__gallery">
+            <picture class="gallery">
+                <img src="./IMG/chico filmando.jpg" class="gallery__img" alt="chico filmando">
+            </picture>
+            <picture class="gallery">
+                <img src="./IMG/cinema.jpg" class="gallery__img" alt="cine con luces de neon">
+            </picture>
+            <picture class="gallery">
+                <img src="./IMG/manos pintadas.jpg" class="gallery__img" alt="manos pintadas">
+            </picture>
+            <picture class="gallery">
+                <img src="./IMG/afiche.jpg" class="gallery__img" alt="collage de afiches">
+            </picture>
+            <picture class="gallery">
+                <img src="./IMG/IFEMA.JPG" class="gallery__img" alt="Sala de exposicion fotografica">
+            </picture>
+            <picture class="gallery">
+                <img src="./IMG/pantalla puente.jpg" alt="Monitor de camara filma puente">
+            </picture>
+            <picture class="gallery">
+                <img src="./IMG/FICCI V2.JPG" class="gallery__img" alt="sara y hannah en el ficci">
+            </picture>
+            <picture class="gallery">
+                <img src="./IMG/chica filma.jpg" class="gallery__img" alt="chica filmando">
+            </picture>
+            <picture class="gallery">
+                <img src="./IMG/sara expo.jpg" class="gallery__img" alt="sara expone">
+            </picture>
+            <picture class="gallery">
+                <img src="./IMG/salon clase.jpg" class="gallery__img" alt="salon de clase">
+            </picture>
+            <picture class="gallery">
+                <img src="./IMG/cine libre.jpg" class="gallery__img" alt="cine al aire libre">
+            </picture>
+        </div>
+    </section>
+    <section id="contacto" > <!--CONTACTO-->
+        <h2 class="section__titulo">CONTACTO
+        </h2>
+        <div class="contenedor">
+            <div class="ubicacion">
+                <article class="ubicacion__direccion">
+                    <h3>UBICACIÓN</h3>
+                    <p>Medellin - Colombia</p>
+                    <p>Dirección: XXXXXX</p>
+                    <p>Telefono de contacto: XXXXXX</p>
+                    <p>Buenos Aires - Argentina</p>
+                    <p>Dirección: XXXXXX</p>
+                    <p>Telefono de contacto: XXXXXX</p>
+                </article>
+            </div>
+           <div class="formulario">
+            <article class="formulario__casillas">
+                <h3>CONTANOS ALGO</h3>
+                <form action="" method="post" enctype="multipart/form-data">
+                    <input class="form__text" type="text" name="Nombre" placeholder="Cómo te llamas?" >
+                    <br>
+                    <input class="form__text" type="email" name="Email" placeholder="Cuál es tu mail?">
+                    <br>
+                    <textarea class="form__text" name="Mensaje"  cols="30" rows="10" placeholder="Qué nos quieres decir?"></textarea>
+                    <br>
+                    <input class="boton" type="submit" value="ENVIAR">
+                    <br>
+                </form>
+            </article>
+           </div>
+        </div>
+    </section>
+</main>
+</body>
+<footer>
+    <h6 class="pie"> Diseño: Hannah Ciro </h6>
+</footer>
+</html>
