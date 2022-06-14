@@ -102,14 +102,24 @@ header {
     flex-basis: 30%;
     margin: 0;
     padding: 0;
+    height: 3rem;
+    box-sizing: border-box;
 }
 .navegacion__item {
    text-decoration: none;
    height: 15px;
    margin: 0 1.5rem;
-   position: relative
+   height: 3rem;
+   box-sizing: border-box;
+   border:3px solid #301994;
+   transition: border 1s;
+  
 }
-
+.navegacion__item:hover {
+    color: #1D1459;
+    border: 3px solid #f2f2f2;
+    
+}
 .navegacion__link {
     color: #f2f2f2;
     font-size: 1.5rem;
@@ -216,15 +226,18 @@ body {
     gap: 2rem ;
     text-align: center;  
     padding: 2rem;
+    transition: transform .6s;
+   box-sizing: content-box;
 }
 
 .gallery__img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-   
+    object-fit: cover;   
 }
-
+.gallery__img:hover {
+   transform: scale(1.1) ; 
+}
 .hacemos__gallery .gallery:nth-of-type(1){
     grid-column:1/5; 
     

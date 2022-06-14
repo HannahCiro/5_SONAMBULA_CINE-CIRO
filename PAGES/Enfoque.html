@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/index.css">
-    
     <title>Sonambula Cine</title>
 </head>
 <body>
     <header>
         <nav class="nav__header">
-            <a class="nav__logo" href="../index.html">
+            <a class="nav__logo animate__animated animate__pulse" href="../index.html">
                 <picture>
                         <img src="../IMG/Sonámbulapng.png" class="logo" alt="Ojos super puestos logo de sonambula cine">
                 </picture>
@@ -39,12 +43,12 @@
         <section id="enfoque"> <!--ENFOQUE-->
             <h2 class="section__titulo">ENFOQUE</h2>
             <div class="contenedor">
-                <div class="detalle">
+                <div class="detalle" data-aos="fade-right">
                     <article class="detalle__texto">
                         <p class="detalle__descripcion">Breve Detallada de la productora</p>
                     </article>
                 </div>
-                <div class="loop">
+                <div class="loop" data-aos="fade-left">
                     <article class="loop__logo">
                         <img class= "loop__video" src="../IMG/logoo video.JPG" alt="Video logo sonambula" >
                     </article>
@@ -52,6 +56,10 @@
             </div>
         </section>
     </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </body>
 <footer>
     <h6 class="pie"> Diseño: Hannah Ciro </h6>
