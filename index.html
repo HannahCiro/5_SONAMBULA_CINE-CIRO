@@ -9,6 +9,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/index.css">
     <title>Sonambula Cine</title>
 </head>
@@ -39,15 +40,39 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main >
     <section id="novedades"> <!--NOVEDADES-->
-        <div class="noticias">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./IMG/carrusel1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./IMG/carrusel2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./IMG/carrusel3.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./IMG/carrusel4.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <!--<div class="noticias">
             <img class= "novedades__img" src="./IMG/home S.PNG" alt="Noticias">
-        </div>
+        </div>-->
     </section>
     <section id="enfoque"> <!--ENFOQUE-->
         <h2 class="section__titulo">ENFOQUE</h2>
-        <div class="contenedor">
+        <div class="container">
             <div class="detalle" data-aos="fade-right">
                 <article class="detalle__texto">
                     <p class="detalle__descripcion">Breve Detallada de la productora</p>
@@ -62,7 +87,7 @@
     </section>
     <section id="nosotras"> <!--NOSOTRAS-->
         <h2 class="section__titulo">NOSOTRAS</h2>
-        <div class="contenedor">
+        <div class="container">
             <div class="equipo">
                 <article class="equipo__ella">
                      <img class="equipo__img" src="./IMG/SaraB&W.jpg" alt="foto de sara">
@@ -79,7 +104,7 @@
              </div>
         </div>
     </section>
-    <section id="hacemos" class="hacemos__contenedor"> <!--HACEMOS-->
+    <section id="hacemos" class="hacemos__container"> <!--HACEMOS-->
         <h2 class="section__titulo">HACEMOS</h2>
         <div class="hacemos__gallery">
             <picture class="gallery">
@@ -120,7 +145,7 @@
     <section id="contacto" > <!--CONTACTO-->
         <h2 class="section__titulo">CONTACTO
         </h2>
-        <div class="contenedor">
+        <div class="container">
             <div class="ubicacion">
                 <article class="ubicacion__direccion">
                     <h3>UBICACIÓN</h3>
@@ -150,6 +175,7 @@
         </div>
     </section>
 </main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
