@@ -9,36 +9,55 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../CSS/index.css">
     <title>Sonambula Cine</title>
 </head>
 <body>
-    <header>
-        <nav class="nav__header">
-            <a class="nav__logo animate__animated animate__pulse" href="../index.html">
-                <picture>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <picture>
                         <img src="../IMG/Sonámbulapng.png" class="logo" alt="Ojos super puestos logo de sonambula cine">
-                </picture>
-            </a>
-            <ul class="navegacion">
-                <li class="navegacion__item">
-                    <a class="navegacion__link" href="Novedades.html">Novedades</a>
-                </li>
-                <li class="navegacion__item">
-                    <a class="navegacion__link" href="Enfoque.html">Enfoque</a>
-                </li>
-                <li class="navegacion__item">
-                    <a class="navegacion__link" href="Nosotras.html">Nosotras</a>
-                </li>
-                <li class="navegacion__item">
-                    <a class="navegacion__link" href="Hacemos.html">Hacemos</a>
-                </li>
-                <li class="navegacion__item">
-                    <a class="navegacion__link" href="Contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+                   </picture>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> 
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link active fs-3" href="./PAGES/Novedades.html">Novedades</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link fs-3" href="./PAGES/Nosotras.html">Nosotras</a>
+                        </li>
+                        <li class="nav-item dropdown"><a class="nav-link fs-3 dropdown-tooggle" href="./PAGES/Hacemos.html" role="button" data-bs-toggle="dropdown">Hacemos</a>
+                        <ul class="dropdown-menu bg-secondary" >
+                            <li><a class="dropdown-item" href=""></a>Cine</li>
+                            <li><a class="dropdown-item" href=""></a>Festivales</li>
+                            <li><a class="dropdown-item" href=""></a>Pedagogía</li>
+                        </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link fs-3" href="./PAGES/Contacto.html">Contacto</a></li>
+                    </ul>
+                    <hr class="text-white-50">
+                    <ul class=" navbar-nav flex-row flex-wrap text-light">
+                       <li class="nav-item col-6 col-md-auto p-3"><i class="bi bi-instagram"></i>
+                       <small class="d-md-none ms-2">Instagram</small>
+                       </li>
+                       <li class="nav-item col-6 col-md-auto p-3"><i class="bi bi-vimeo"></i>
+                       <small class="d-md-none ms-2">Vimeo</small>
+                       </li>
+                       <li class="nav-item col-6 col-md-auto p-3"><i class="bi bi-whatsapp"></i>
+                       <small class="d-md-none ms-2">Whatsapp</small>
+                       </li>
+                       <li class="nav-item col-6 col-md-auto p-3"><i class="bi bi-facebook"></i>
+                       <small class="d-md-none ms-2">Facebook</small>
+                       </li> 
+                    </ul>
+                </div>  
+            </div>
+        </nav> 
     <main>
         <section id="enfoque"> <!--ENFOQUE-->
             <h2 class="section__titulo">ENFOQUE</h2>
@@ -56,6 +75,7 @@
             </div>
         </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
