@@ -1,0 +1,26 @@
+{
+  "name": "5_sonambula_cine-ciro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-sass": "node-sass --incluide-path scss sass/index.scss css/translated.css",
+    "wathc-sass": "nodemon -e scss -x \"npm run build-sass\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HannahCiro/5_SONAMBULA_CINE-CIRO.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HannahCiro/5_SONAMBULA_CINE-CIRO/issues"
+  },
+  "homepage": "https://github.com/HannahCiro/5_SONAMBULA_CINE-CIRO#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.18"
+  }
+}

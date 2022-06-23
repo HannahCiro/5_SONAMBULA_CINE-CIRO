@@ -1,0 +1,14 @@
+#nosotras { 
+    flex-flow: row wrap;
+    padding: 1rem;
+    width: 100%;
+}
+.equipo{ 
+    display: inline-block;
+    .equipo__img {
+        width: 100%;
+    }
+    .equipo__titulo {
+        text-align: center;
+    }
+}
