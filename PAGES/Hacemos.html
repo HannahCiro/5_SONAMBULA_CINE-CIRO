@@ -16,32 +16,44 @@
 </head>
 </head>
 <body>
-    <header>
-        <nav class="nav__header">
-            <a class="nav__logo animate__animated animate__pulse" href="../index.html">
-                <picture>
-                        <img src="../IMG/Sonámbulapng.png" class="logo" alt="Ojos super puestos logo de sonambula cine">
-                </picture>
+    <!--HEADER-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+              <i class="bi bi-eye"></i>
+              <span class="text-light h2">SONÁMBULA CINE</span>
             </a>
-            <ul class="navegacion">
-                <li class="navegacion__item">
-                    <a class="navegacion__link" href="../PAGES/Novedades.html">Novedades</a>
-                </li>
-                <li class="navegacion__item">
-                    <a class="navegacion__link" href="../PAGES/Enfoque.html">Enfoque</a>
-                </li>
-                <li class="navegacion__item">
-                    <a class="navegacion__link" href="../PAGES/Nosotras.html">Nosotras</a>
-                </li>
-                <li class="navegacion__item">
-                    <a class="navegacion__link" href="../PAGES/Hacemos.html">Hacemos</a>
-                </li>
-                <li class="navegacion__item">
-                    <a class="navegacion__link" href="../PAGES/Contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> 
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link fs-5" href="../PAGES/Novedades.html">Novedades</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link fs-5" href="../PAGES/Nosotras.html">Nosotras</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link active fs-5" href="../PAGES/Hacemos.html">Hacemos</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link fs-5" href="../PAGES/Contacto.html">Contacto</a></li>
+                </ul>
+                <hr class="text-white-50">
+                <ul class=" navbar-nav flex-row flex-wrap text-light">
+                   <li class="nav-item col-6 col-md-auto p-3"><i class="bi bi-instagram"></i>
+                   <small class="d-md-none ms-2">Instagram</small>
+                   </li>
+                   <li class="nav-item col-6 col-md-auto p-3"><i class="bi bi-vimeo"></i>
+                   <small class="d-md-none ms-2">Vimeo</small>
+                   </li>
+                   <li class="nav-item col-6 col-md-auto p-3"><i class="bi bi-whatsapp"></i>
+                   <small class="d-md-none ms-2">Whatsapp</small>
+                   </li>
+                   <li class="nav-item col-6 col-md-auto p-3"><i class="bi bi-facebook"></i>
+                   <small class="d-md-none ms-2">Facebook</small>
+                   </li> 
+                </ul>
+            </div>  
+        </div>
+    </nav> 
     <main>
         <section id="hacemos" class="hacemos__container"> <!--HACEMOS-->
             <h2 class="section__titulo">HACEMOS</h2>

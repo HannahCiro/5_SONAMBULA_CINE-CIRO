@@ -50,3 +50,37 @@ img {
     height: 600px;
     min-height: calc(100vh - 70px - 15px);
 }
+
+@media screen and (min-width:320px) and (max-width:576px){
+    .container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-content: center;
+        padding: 5px;
+        height: 400px;
+    }
+    .section__titulo {
+        text-align: center;
+        margin: 10px;
+        padding: 5px;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:768px){
+    .container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-content: center;
+        padding: 5px;
+        height: 400px;
+    }
+    .section__titulo {
+        text-align: center;
+        margin: 10px;
+        padding: 5px;
+        font-size: 3rem;
+    }   
+}

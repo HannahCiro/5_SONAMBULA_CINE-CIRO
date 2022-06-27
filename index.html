@@ -15,30 +15,25 @@
     <title>Sonambula Cine</title>
 </head>
 <body>
+    <!--HEADER-->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="./index.html">
-                <picture>
-                    <img src="./IMG/Sonámbulapng.png" class="logo" alt="Ojos super puestos logo de sonambula cine">
-               </picture>
+              <i class="bi bi-eye"></i>
+              <span class="text-light h2">SONÁMBULA CINE</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button> 
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link active fs-3" href="./PAGES/Novedades.html">Novedades</a>
+                    <li class="nav-item"><a class="nav-link fs-5" href="./PAGES/Novedades.html">Novedades</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link fs-3" href="./PAGES/Nosotras.html">Nosotras</a>
+                    <li class="nav-item"><a class="nav-link fs-5" href="./PAGES/Nosotras.html">Nosotras</a>
                     </li>
-                    <li class="nav-item dropdown"><a class="nav-link fs-3 dropdown-tooggle" href="./PAGES/Hacemos.html" role="button" data-bs-toggle="dropdown">Hacemos</a>
-                    <ul class="dropdown-menu bg-secondary" >
-                        <li><a class="dropdown-item" href=""></a>Cine</li>
-                        <li><a class="dropdown-item" href=""></a>Festivales</li>
-                        <li><a class="dropdown-item" href=""></a>Pedagogía</li>
-                    </ul>
+                    <li class="nav-item"><a class="nav-link fs-5" href="./PAGES/Hacemos.html">Hacemos</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link fs-3" href="./PAGES/Contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link fs-5" href="./PAGES/Contacto.html">Contacto</a></li>
                 </ul>
                 <hr class="text-white-50">
                 <ul class=" navbar-nav flex-row flex-wrap text-light">
@@ -58,7 +53,7 @@
             </div>  
         </div>
     </nav> 
-    <main >
+<main>
     <section id="novedades"> <!--NOVEDADES-->
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -90,13 +85,17 @@
         <div class="container">
             <div class="detalle" data-aos="fade-right">
                 <article class="detalle__texto">
-                    <p class="detalle__descripcion">Breve Detallada de la productora</p>
+                    <p class="detalle__descripcion">Somos una productora que trabaja desde Colombia y Argentina. Nos dedicamos a desarrollar proyectos de ficcón y documental, proyectos pedagógicos de cine en diferentes ámbitos, como en festivales, universidades y/o comunidades. 
+                    </p>
                 </article>
             </div>
             <div class="loop" data-aos="fade-left">
-                <article class="loop__logo">
-                    <img class= "loop__video" src="./IMG/logoo video.JPG" alt="Video logo sonambula" >
-                </article>
+                <div class="loop__logo">
+                    <video class= "video" controls autoplay loop>
+                        <source src="./IMG/videologo.mp4.mp4" type="video/mp4"> 
+                        Tu navegador no es compatible con HTML5
+                    </video> 
+                </div>
             </div>
         </div>
     </section>
@@ -105,16 +104,24 @@
         <div class="container">
             <div class="equipo">
                 <article class="equipo__ella">
-                     <img class="equipo__img" src="./IMG/Sarapng.png" alt="foto de sara">
-                     <h3 class="equipo__titulo">SARA ÁLVAREZ</h3>
+                    <picture class="ella__img">
+                        <img class="equipo__img" src="./IMG/SaraColors.png" alt="foto de sara">
+                    </picture>
+                    <div class="equipo__descripcion"> 
+                    <h3 class="equipo__titulo">SARA ÁLVAREZ</h3>
                      <p class="equipo__profesion">Comunicadora Audiovisual y Multimedial</p>
+                    </div>
                  </article>
              </div>
              <div class="equipo">
                  <article class="equipo__ella">
-                     <img class="equipo__img" src="./IMG/Hannahpng.png" alt="foto de hannah" >
-                     <h3 class="equipo__titulo">HANNAH CIRO</h3>
-                     <p class="equipo__profesion">Diseñadora de Imagen y Sonido </p>
+                    <picture class="ella__img">
+                        <img class="equipo__img" src="./IMG/HannahColors.png" alt="foto de hannah" >
+                    </picture>
+                    <div class="equipo__descripcion">
+                        <h3 class="equipo__titulo">HANNAH CIRO</h3>
+                        <p class="equipo__profesion">Diseñadora de Imagen y Sonido </p>
+                    </div>
                  </article>
              </div>
         </div>
