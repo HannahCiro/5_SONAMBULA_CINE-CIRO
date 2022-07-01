@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Quicksand:wght@300;400;500;700&display=swap');
+
+@mixin flex ($dir, $jus, $alg, $gap) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $jus;
+    align-items: $alg;   
+    gap: $gap;
+}
+
+@mixin size ($width, $height){
+    width: $width;
+    height: $height;    
+}
+

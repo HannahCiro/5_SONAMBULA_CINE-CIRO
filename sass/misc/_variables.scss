@@ -1,23 +1,44 @@
-/*Colors*/
-$primary: #120d31;
-$secondary: #ff5376;
-$alternative: #30254d;
-$text-color: #2b2b2b;
+
+$primary: #8f88bf;
+$secondary: #1d1459;
+$alternative: #2a1b8c;
+$text-color: #f2f2f2;
+$text-color-dark: #130c40;
 $base: #fdf7fa;
 
 /*spacings*/
 $spacing-large: 6rem;
 $spacing-medium: 2.4rem;
-$spacing-small: 2rem;
-$spacing-xsmall: 1.5rem;
+$spacing-medium-extra: 2rem;
+$spacing-small: 1rem;
+$spacing-xsmall: 0.5rem;
+
+$spacings: (
+    spacing-large: 6rem,
+    spacing-medium: 2.4rem,
+    spacing-medium-extra: 2rem,
+    spacing-small: 1rem,
+    spacing-xsmall: 0.5rem,
+);
+
+@each $key, $val in $spacings {
+    .#{$key} {
+        padding: #{$val};
+    }
+    
+}
 
 /*font-family*/
-$font-principal: 'barlow', sans-serif;
-$font-principal: 'Roboto Salab', serif;
+$font-principal: 'Montserrat', sans-serif;
+$font-title: 'Quicksand', sans-serif;
 
 /*Font-Sizes*/
-$text-large: 5.2rem;
-$text-medium: 2.2rem;
-$text-base: 1.6rem;
-$text-small: 1.4rem;
+$text-large: 4rem;
+$text-medium: 2.5rem;
+$text-medium-extra: 2rem;
+$text-base: 1.5rem;
+$text-small: 1.3rem;
+$text-xsmall: 1rem;
+
+
 

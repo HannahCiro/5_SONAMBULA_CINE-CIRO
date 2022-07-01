@@ -1,0 +1,178 @@
+/*MEDIA 320PX*/
+@media screen and (min-width:320px) and (max-width:576px){
+    .container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-content: center;
+        padding: $spacing-xsmall;
+        height: 600px;
+    }
+    .section__titulo {
+        text-align: center;
+        margin: 10px;
+        padding: $spacing-xsmall;
+        font-size: $text-medium-extra;
+    
+    }
+    #enfoque {
+        height: 700px;
+        .container {
+            .detalle {
+                .detalle__texto {
+                display: flex;
+                align-items: center;
+                width: 250px;
+                height: 150px;
+                padding: $spacing-small;
+               .detalle__descripcion {
+                    text-align: justify;
+                    font-size: $text-small;  
+                }   
+            }    
+        }        
+        .loop__logo {
+            .loop__video {
+                    width: 300px;
+                    height: 200px;
+                }
+            }    
+        }
+    }
+   
+    /*NOSOTRAS*/
+
+    #nosotras {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .container {
+           
+            .equipo {
+                display: flex;
+                justify-content: center;
+                .equipo__ella {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .ella__img {
+                        width: 200px;
+                    }
+                 }
+                .equipo__descripcion {
+                    width: 200px;
+                    display: flex;
+                    flex-direction: column;
+                    height: 120px;
+                    .equipo__titulo {
+                        font-size: $text-base;
+                    }
+                    .equipo__profesion {
+                        font-size: $text-small;
+                    }
+                }
+            }
+        }
+    }
+    
+    /*HACEMOS*/
+    .hacemos__container {
+        height: 800px;
+    }
+
+    /*CONTACTO*/
+    #contacto{
+        display: flex;
+        flex-flow: row column;
+        justify-content: space-around;
+        align-content: center;
+        padding: $spacing-small;
+        width: 100%;
+        background-color: black;
+        background-image:none;
+        .container {
+            height: 500px;
+            .ubicacion{ 
+                width: 320px; 
+                .ubicacion__direccion {
+                    width: 200px;
+                    display: inline;
+                    p {
+                    font-size: $text-xsmall;
+                    }
+                    h3 {
+                    font-size: $text-base;
+                    }
+                }
+            }
+            .formulario{ 
+                display: flex;
+                justify-content: center;
+                width: 320px;
+                padding: $spacing-small;
+                & h3{ 
+                    font-size: $text-base;}
+                .form__text {
+                        font-weight: bold;
+                }
+                .boton {
+                        font-weight: bold;
+                }
+            }
+        }
+        
+    }   
+}
+
+/*MEDIA 576PX*/
+@media screen and (min-width:576px) and (max-width:768px){
+    .container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-content: center;
+        padding: $spacing-xsmall;
+        height: 400px;
+    }
+    .section__titulo {
+        text-align: center;
+        margin: 10px;
+        padding: $spacing-xsmall;
+        font-size: $text-medium;
+    }
+
+    /*NOSOTRAS*/
+
+    #NOSOTRAS.container {
+        display: flex;
+        justify-content: center;
+        .equipo {
+            width: 250px;
+            &__ella {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            &__img {
+                    width: 250px;
+            }
+            &__descripcion {
+                width: 200px;
+                display: flex;
+                flex-direction: column;
+                height: 120px;
+            }
+            &__titulo {
+                font-size: $text-medium;
+            }
+            &__profesion {
+                font-size: $text-base;
+            } 
+            }
+        }
+    } 
+     /*HACEMOS*/
+    .hacemos__container {
+        height: 1000px;
+    }
+}
+

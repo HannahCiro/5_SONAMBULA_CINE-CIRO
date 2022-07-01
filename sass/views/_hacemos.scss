@@ -1,0 +1,21 @@
+/*HACEMOS*/
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    padding: $spacing-medium-extra;
+    .job-item{
+        overflow: hidden;
+        position: relative;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .p-0{
+        padding: 0!important;
+    }
+}
+
+
+    
