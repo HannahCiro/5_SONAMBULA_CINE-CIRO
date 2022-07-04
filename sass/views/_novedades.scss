@@ -1,13 +1,14 @@
 /*NOVEDADES*/
-
-.novedades {
+h1{
+    padding: 2rem;
+   }
+#novedadesdos {
+    color: black;
+    font-weight: bold;
     .card-title{
         font-weight: bold;
-        font-size: $text-base;
-     }
-     .card-text{
+    }
+    p {
         text-align: justify;
-        font-weight: bold;
-        font-size: $text-small;
-     }
- }
+    }
+}

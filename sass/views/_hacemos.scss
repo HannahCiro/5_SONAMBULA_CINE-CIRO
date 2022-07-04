@@ -17,5 +17,19 @@
     }
 }
 
+.hacemos__card{
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-weight: bold;
+    .card-title {
+        font-weight: bold;
+    }
+    .card-text {
+        font-weight: bold;
+        text-align: justify;
+    }
+}
 
     

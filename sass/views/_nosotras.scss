@@ -1,26 +1,28 @@
 #nosotras {
-    height: 600px;
+    height: 750px;
     .equipo__descripcion {
         padding: $spacing-medium-extra;
         .buton {
             .btn {
-                width: 150px;
-                padding: 10px 12px;
+                width: 100px;
+                padding: 5px 8px;
+                margin: 0%
             }
             .btn__contacto {
                 @extend .btn;
-                background-color: black;
+                background-color: $secondary;
+                color: $text-color;
                 &:hover {
-                    background-color: rgb(59, 55, 55);
+                    background-color: $alternative;
                 }
             }
             .btn__leermas {
                 @extend .btn;
-                background-color: rgb(59, 55, 55);
-                color: white;
+                background-color: $alternative;
+                color: $text-color;
                 font-weight: bold;
                 &:hover {
-                    background-color: black;
+                    background-color: $secondary;
                 }
             }
         }

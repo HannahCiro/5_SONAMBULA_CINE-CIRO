@@ -5,17 +5,20 @@
 }
  /*NOVEDADES*/
 
- .novedades {
-    .card-title{
-        font-weight: bold;
-        font-size: $text-base;
-     }
-     .card-text{
-        text-align: justify;
-        font-weight: bold;
-        font-size: $text-small;
-     }
- }
+#novedades {
+    .novedades {
+        .card-title{
+            font-weight: bold;
+            font-size: $text-base;
+         }
+         .card-text{
+            text-align: justify;
+            font-weight: bold;
+            font-size: $text-small;
+         }
+    }
+}
+
 
 /*ENFOQUE*/
 #enfoque {
@@ -33,55 +36,36 @@
         .loop__logo {
             .loop__video {
                 @include size (500px, 300px);
-                }
             }
         }
+    }
+}
+   
 
 
 #nosotras {
-    height: 600px;
+    height: 750px;
+    .equipo {
+        height: 300px;
+    }
 }
 
 /*HACEMOS*/
-.row {
-    display: -ms-flexbox;
-    display: flex;
-    flex-wrap: wrap;
-    padding:  $spacing-medium-extra;
-    .job-item{
-        overflow: hidden;
-        position: relative;
-    }
-    .p-0{
-        padding: 0!important;
-    }
-}
-
-
-
-/*CONTACTO*/
-    flex-flow: row wrap;
-    padding: map-get($spacings, $spacing-small);
-    width: 100%;
-    height: 600px;
-    background-image: url(../IMG/layered-peaks-haikei.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    .container .ubicacion{ 
-        display: inline-block;
-        width: 40%;
-    & .formulario{
-        display: inline-block;
-        width: 40%;
-    } }
-    .formulario {
-        .formulario__casillas .form__text {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: bold;
+#hacemos {
+    .row {
+        display: -ms-flexbox;
+        display: flex;
+        flex-wrap: wrap;
+        padding:  $spacing-medium-extra;
+        .job-item{
+            overflow: hidden;
+            position: relative;
         }
-        .boton {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: bold;
+        .p-0{
+            padding: 0!important;
         }
     }
 }
+
+
+    

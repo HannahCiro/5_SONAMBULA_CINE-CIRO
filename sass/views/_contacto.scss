@@ -1,25 +1,30 @@
 /*CONTACTO*/
+
 #contacto{
-    flex-flow: row wrap;
-    padding: $spacing-small;
-    width: 100%;
-    height: 600px;
-    .container .ubicacion{ 
-        display: inline-block;
-        width: 40%;
-    &.formulario{
-        display: inline-block;
-        width: 40%;
-    } }
-    .formulario {
-        .formulario__casillas .form__text {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: bold;
+
+    .container {
+        flex-flow: row wrap;
+        height: 450px;
+        &.ubicacion{ 
+            display: inline-block;
+            width: 40%;
+            text-align: justify;
+        &.formulario{
+            display: inline-block;
+            width: 40%;
+            } 
         }
-        .boton {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: bold;
+        .formulario {
+            .formulario__casillas .form__text {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: bold;
+            }
+            .boton {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: bold;
+            }
         }
     }
 }
+   
 

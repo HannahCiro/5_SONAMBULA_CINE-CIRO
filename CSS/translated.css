@@ -61,7 +61,7 @@ img {
   justify-content: space-around;
   flex-flow: row wrap;
   align-content: center;
-  height: 600px;
+  height: 500px;
   padding: 0.5rem; }
 
 /*PARTIALS*/
@@ -74,26 +74,18 @@ img {
   font-family: "Quicksand", sans-serif; }
 
 /*NOVEDADES*/
-.novedades .card-title {
+#novedades .novedades .card-title {
   font-weight: bold;
   font-size: 1.5rem; }
 
-.novedades .card-text {
+#novedades .novedades .card-text {
   text-align: justify;
   font-weight: bold;
   font-size: 1.3rem; }
 
 /*ENFOQUE*/
 #enfoque {
-  height: 600px;
-  /*HACEMOS*/
-  /*CONTACTO*/
-  flex-flow: row wrap;
-  width: 100%;
-  height: 600px;
-  background-image: url(../IMG/layered-peaks-haikei.png);
-  background-repeat: no-repeat;
-  background-size: 100%; }
+  height: 600px; }
   #enfoque .container .detalle .detalle__texto {
     display: flex;
     flex-direction: row;
@@ -107,58 +99,55 @@ img {
   #enfoque .container .loop__logo .loop__video {
     width: 500px;
     height: 300px; }
-  #enfoque #nosotras {
-    height: 600px; }
-  #enfoque .row {
-    display: -ms-flexbox;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 2rem; }
-    #enfoque .row .job-item {
-      overflow: hidden;
-      position: relative; }
-    #enfoque .row .p-0 {
-      padding: 0 !important; }
-  #enfoque .container .ubicacion {
-    display: inline-block;
-    width: 40%; }
-    #enfoque .container .ubicacion .formulario {
-      display: inline-block;
-      width: 40%; }
-  #enfoque .formulario .formulario__casillas .form__text {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold; }
-  #enfoque .formulario .boton {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold; }
-
-/*NOVEDADES*/
-.novedades .card-title {
-  font-weight: bold;
-  font-size: 1.5rem; }
-
-.novedades .card-text {
-  text-align: justify;
-  font-weight: bold;
-  font-size: 1.3rem; }
 
 #nosotras {
-  height: 600px; }
+  height: 750px; }
+  #nosotras .equipo {
+    height: 300px; }
+
+/*HACEMOS*/
+#hacemos .row {
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem; }
+  #hacemos .row .job-item {
+    overflow: hidden;
+    position: relative; }
+  #hacemos .row .p-0 {
+    padding: 0 !important; }
+
+/*NOVEDADES*/
+h1 {
+  padding: 2rem; }
+
+#novedadesdos {
+  color: black;
+  font-weight: bold; }
+  #novedadesdos .card-title {
+    font-weight: bold; }
+  #novedadesdos p {
+    text-align: justify; }
+
+#nosotras {
+  height: 750px; }
   #nosotras .equipo__descripcion {
     padding: 2rem; }
     #nosotras .equipo__descripcion .buton .btn, #nosotras .equipo__descripcion .buton .btn__contacto, #nosotras .equipo__descripcion .buton .btn__leermas {
-      width: 150px;
-      padding: 10px 12px; }
+      width: 100px;
+      padding: 5px 8px;
+      margin: 0%; }
     #nosotras .equipo__descripcion .buton .btn__contacto {
-      background-color: black; }
+      background-color: #1d1459;
+      color: #f2f2f2; }
       #nosotras .equipo__descripcion .buton .btn__contacto:hover {
-        background-color: #3b3737; }
+        background-color: #2a1b8c; }
     #nosotras .equipo__descripcion .buton .btn__leermas {
-      background-color: #3b3737;
-      color: white;
+      background-color: #2a1b8c;
+      color: #f2f2f2;
       font-weight: bold; }
       #nosotras .equipo__descripcion .buton .btn__leermas:hover {
-        background-color: black; }
+        background-color: #1d1459; }
 
 /*HACEMOS*/
 .row {
@@ -175,28 +164,39 @@ img {
   .row .p-0 {
     padding: 0 !important; }
 
+.hacemos__card {
+  display: flex;
+  height: 200px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-weight: bold; }
+  .hacemos__card .card-title {
+    font-weight: bold; }
+  .hacemos__card .card-text {
+    font-weight: bold;
+    text-align: justify; }
+
 /*CONTACTO*/
-#contacto {
+#contacto .container {
   flex-flow: row wrap;
-  padding: 1rem;
-  width: 100%;
-  height: 600px; }
-  #contacto .container .ubicacion {
+  height: 450px; }
+  #contacto .container.ubicacion {
     display: inline-block;
-    width: 40%; }
-    #contacto .container .ubicacion.formulario {
+    width: 40%;
+    text-align: justify; }
+    #contacto .container.ubicacion.formulario {
       display: inline-block;
       width: 40%; }
-  #contacto .formulario .formulario__casillas .form__text {
+  #contacto .container .formulario .formulario__casillas .form__text {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold; }
-  #contacto .formulario .boton {
+  #contacto .container .formulario .boton {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold; }
 
 /*MEDIAS*/
 /*MEDIA 320PX*/
-@media screen and (min-width: 320px) and (max-width: 576px) {
+@media screen and (min-width: 200px) and (max-width: 576px) {
   .container {
     display: flex;
     flex-flow: row wrap;
@@ -210,7 +210,7 @@ img {
     padding: 0.5rem;
     font-size: 2rem; }
   #enfoque {
-    height: 700px; }
+    height: 500px; }
     #enfoque .container .detalle .detalle__texto {
       display: flex;
       align-items: center;
@@ -227,7 +227,8 @@ img {
   #nosotras {
     display: flex;
     justify-content: center;
-    flex-direction: column; }
+    flex-direction: column;
+    height: 650px; }
     #nosotras .container .equipo {
       display: flex;
       justify-content: center; }
@@ -246,13 +247,12 @@ img {
           font-size: 1.5rem; }
         #nosotras .container .equipo .equipo__descripcion .equipo__profesion {
           font-size: 1.3rem; }
-  /*HACEMOS*/
-  .hacemos__container {
+  #hacemos .hacemos__container {
     height: 800px; }
   /*CONTACTO*/
   #contacto {
     display: flex;
-    flex-flow: row column;
+    flex-flow: column;
     justify-content: space-around;
     align-content: center;
     padding: 1rem;
@@ -283,7 +283,7 @@ img {
           font-weight: bold; } }
 
 /*MEDIA 576PX*/
-@media screen and (min-width: 576px) and (max-width: 768px) {
+@media screen and (min-width: 577px) and (max-width: 768px) {
   .container {
     display: flex;
     flex-flow: row wrap;
@@ -296,27 +296,37 @@ img {
     margin: 10px;
     padding: 0.5rem;
     font-size: 2.5rem; }
+  /*HACEMOS*/
+  #enfoque {
+    height: 600px; }
+    #enfoque .container .detalle .detalle__texto {
+      display: flex;
+      align-items: center;
+      width: 500px;
+      height: 200px;
+      padding: 1rem; }
+      #enfoque .container .detalle .detalle__texto .detalle__descripcion {
+        text-align: justify;
+        font-size: 1.3rem; }
+    #enfoque .loop__logo .loop__video {
+      width: 500px;
+      height: 300px; }
   /*NOSOTRAS*/
-  #NOSOTRAS.container {
+  #nosotras .container {
     display: flex;
-    justify-content: center; }
-    #NOSOTRAS.container .equipo {
+    justify-content: center;
+    height: 500px; }
+    #nosotras .container .equipo {
       width: 250px; }
-      #NOSOTRAS.container .equipo__ella {
+      #nosotras .container .equipo__descripcion {
+        width: 200px;
         display: flex;
         flex-direction: column;
-        align-items: center; }
-        #NOSOTRAS.container .equipo__ella__img {
-          width: 250px; }
-        #NOSOTRAS.container .equipo__ella__descripcion {
-          width: 200px;
-          display: flex;
-          flex-direction: column;
-          height: 120px; }
-        #NOSOTRAS.container .equipo__ella__titulo {
-          font-size: 2.5rem; }
-        #NOSOTRAS.container .equipo__ella__profesion {
-          font-size: 1.5rem; }
+        height: 120px; }
+      #nosotras .container .equipo__titulo {
+        font-size: 2.5rem; }
+      #nosotras .container .equipo__profesion {
+        font-size: 1.5rem; }
   /*HACEMOS*/
-  .hacemos__container {
+  #hacemos .hacemos__container {
     height: 1000px; } }
