@@ -6,7 +6,7 @@
         justify-content: space-around;
         align-content: center;
         padding: $spacing-xsmall;
-        height: 600px;
+        height: 530px;
     }
     .section__titulo {
         text-align: center;
@@ -22,12 +22,13 @@
                 .detalle__texto {
                 display: flex;
                 align-items: center;
-                width: 250px;
-                height: 150px;
+                width: 300px;
+                height: 213px;
                 padding: $spacing-small;
                .detalle__descripcion {
                     text-align: justify;
-                    font-size: $text-small;  
+                    font-size: xx-small; 
+                    height: 300px; 
                 }   
             }    
         }        
@@ -56,6 +57,8 @@
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                    justify-content: center;
+                    height: 332px;
                     .ella__img {
                         width: 200px;
                     }
@@ -64,7 +67,8 @@
                     width: 200px;
                     display: flex;
                     flex-direction: column;
-                    height: 120px;
+                    height: 70px;
+                    padding: 0;
                     .equipo__titulo {
                         font-size: $text-base;
                     }
@@ -124,18 +128,29 @@
             }
         }
         
-    }   
+    } 
+    #proximamente {
+        .textprox {
+            padding: 2rem;
+        }
+        .contentprox {
+            .imgprox { 
+                height: 550px;
+                width: 304px;          
+            }
+        }     
+    }  
 }
 
 /*MEDIA 576PX*/
-@media screen and (min-width:577px) and (max-width:768px) {
+@media screen and (min-width:577px) and (max-width:1200px) {
     .container {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
         align-content: center;
         padding: $spacing-xsmall;
-        height: 400px;
+        height: 500px;
     }
     .section__titulo {
         text-align: center;
@@ -153,11 +168,13 @@
                 display: flex;
                 align-items: center;
                 width: 500px;
-                height: 200px;
+                height: 221px;
                 padding: $spacing-small;
                 .detalle__descripcion {
                 text-align: justify;
-                font-size: $text-small;  
+                font-size: x-small;
+                width: 500px;
+                height: 147px;  
                 }   
             }    
         }
@@ -202,5 +219,11 @@
             height: 1000px;
         }
     }
+    #proximamente {
+        .contentprox {
+            .imgprox { 
+                width: 550px;          
+            }
+        }     
+    }
 }
-    

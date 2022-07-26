@@ -31,7 +31,7 @@ html {
 /*Generals*/
 body {
   height: 100%;
-  background-color: #8f88bf;
+  background-color: #0D0038;
   font-family: "Montserrat", sans-serif;
   color: #f2f2f2; }
 
@@ -92,8 +92,8 @@ img {
     justify-content: center;
     align-items: center;
     gap: 0;
-    width: 400px;
-    height: 300px; }
+    width: 600px;
+    height: 340px; }
     #enfoque .container .detalle .detalle__texto .detalle__descripcion {
       text-align: justify; }
   #enfoque .container .loop__logo .loop__video {
@@ -138,7 +138,7 @@ h1 {
       padding: 5px 8px;
       margin: 0%; }
     #nosotras .equipo__descripcion .buton .btn__contacto {
-      background-color: #1d1459;
+      background-color: #433c70;
       color: #f2f2f2; }
       #nosotras .equipo__descripcion .buton .btn__contacto:hover {
         background-color: #2a1b8c; }
@@ -147,7 +147,7 @@ h1 {
       color: #f2f2f2;
       font-weight: bold; }
       #nosotras .equipo__descripcion .buton .btn__leermas:hover {
-        background-color: #1d1459; }
+        background-color: #433c70; }
 
 /*HACEMOS*/
 .row {
@@ -194,6 +194,92 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold; }
 
+#proximamente {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-direction: column;
+  background-color: #0D0038; }
+  #proximamente .textprox {
+    text-align: center;
+    padding: 3rem; }
+  #proximamente .contentprox .imgprox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 634px;
+    flex-wrap: nowrap;
+    width: 600px;
+    align-content: stretch; }
+
+#artbody h1 {
+  text-align: center;
+  color: black; }
+
+#artbody .articulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center; }
+  #artbody .articulo .arttext {
+    height: 855px;
+    width: 900px;
+    text-align: justify;
+    color: black;
+    font-size: medium;
+    font-weight: bold; }
+    #artbody .articulo .arttext .p1 {
+      padding: 2rem 0; }
+    #artbody .articulo .arttext .p3 {
+      padding: 0 0 2rem 0; }
+    #artbody .articulo .arttext .p4 {
+      padding: 2rem 0; }
+    #artbody .articulo .arttext .p5 {
+      padding: 2rem 0; }
+    #artbody .articulo .arttext .p6 {
+      padding: 2rem 0; }
+    #artbody .articulo .arttext .p7 {
+      padding: 2rem 0; }
+    #artbody .articulo .arttext .p8 {
+      padding: 2rem 0; }
+    #artbody .articulo .arttext .p9 {
+      padding: 2rem 0; }
+    #artbody .articulo .arttext .p10 {
+      padding: 2rem 0; }
+
+#artbody {
+  background-color: #c9c6c6; }
+  #artbody h1 {
+    text-align: center;
+    color: black; }
+  #artbody .articulo .pcero {
+    padding: 1rem 0; }
+  #artbody .articulo .puno {
+    padding: 1rem 0; }
+  #artbody .articulo .pdos {
+    padding: 1rem 0; }
+  #artbody .articulo .ptres {
+    padding: 2rem;
+    font-style: italic;
+    font-size: small; }
+  #artbody .articulo .pcuatro {
+    padding: 1rem 0; }
+  #artbody .articulo .pcinco {
+    padding: 1rem 0; }
+  #artbody .articulo .pseis {
+    padding: 1rem 0; }
+  #artbody .articulo .psiete {
+    padding: 1rem 0; }
+  #artbody .articulo .pocho {
+    padding: 1rem 0; }
+  #artbody .articulo .pnueve {
+    padding: 1rem 0; }
+  #artbody .articulo .pdiez {
+    padding: 1rem 0; }
+
 /*MEDIAS*/
 /*MEDIA 320PX*/
 @media screen and (min-width: 200px) and (max-width: 576px) {
@@ -203,7 +289,7 @@ h1 {
     justify-content: space-around;
     align-content: center;
     padding: 0.5rem;
-    height: 600px; }
+    height: 530px; }
   .section__titulo {
     text-align: center;
     margin: 10px;
@@ -214,12 +300,13 @@ h1 {
     #enfoque .container .detalle .detalle__texto {
       display: flex;
       align-items: center;
-      width: 250px;
-      height: 150px;
+      width: 300px;
+      height: 213px;
       padding: 1rem; }
       #enfoque .container .detalle .detalle__texto .detalle__descripcion {
         text-align: justify;
-        font-size: 1.3rem; }
+        font-size: xx-small;
+        height: 300px; }
     #enfoque .container .loop__logo .loop__video {
       width: 300px;
       height: 200px; }
@@ -235,14 +322,17 @@ h1 {
       #nosotras .container .equipo .equipo__ella {
         display: flex;
         flex-direction: column;
-        align-items: center; }
+        align-items: center;
+        justify-content: center;
+        height: 332px; }
         #nosotras .container .equipo .equipo__ella .ella__img {
           width: 200px; }
       #nosotras .container .equipo .equipo__descripcion {
         width: 200px;
         display: flex;
         flex-direction: column;
-        height: 120px; }
+        height: 70px;
+        padding: 0; }
         #nosotras .container .equipo .equipo__descripcion .equipo__titulo {
           font-size: 1.5rem; }
         #nosotras .container .equipo .equipo__descripcion .equipo__profesion {
@@ -280,17 +370,22 @@ h1 {
         #contacto .container .formulario .form__text {
           font-weight: bold; }
         #contacto .container .formulario .boton {
-          font-weight: bold; } }
+          font-weight: bold; }
+  #proximamente .textprox {
+    padding: 2rem; }
+  #proximamente .contentprox .imgprox {
+    height: 550px;
+    width: 304px; } }
 
 /*MEDIA 576PX*/
-@media screen and (min-width: 577px) and (max-width: 768px) {
+@media screen and (min-width: 577px) and (max-width: 1200px) {
   .container {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     align-content: center;
     padding: 0.5rem;
-    height: 400px; }
+    height: 500px; }
   .section__titulo {
     text-align: center;
     margin: 10px;
@@ -303,11 +398,13 @@ h1 {
       display: flex;
       align-items: center;
       width: 500px;
-      height: 200px;
+      height: 221px;
       padding: 1rem; }
       #enfoque .container .detalle .detalle__texto .detalle__descripcion {
         text-align: justify;
-        font-size: 1.3rem; }
+        font-size: x-small;
+        width: 500px;
+        height: 147px; }
     #enfoque .loop__logo .loop__video {
       width: 500px;
       height: 300px; }
@@ -329,4 +426,6 @@ h1 {
         font-size: 1.5rem; }
   /*HACEMOS*/
   #hacemos .hacemos__container {
-    height: 1000px; } }
+    height: 1000px; }
+  #proximamente .contentprox .imgprox {
+    width: 550px; } }

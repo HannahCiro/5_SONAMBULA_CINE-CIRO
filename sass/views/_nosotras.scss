@@ -1,33 +1,35 @@
+
 #nosotras {
-    height: 750px;
-    .equipo__descripcion {
-        padding: $spacing-medium-extra;
-        .buton {
-            .btn {
-                width: 100px;
-                padding: 5px 8px;
-                margin: 0%
-            }
-            .btn__contacto {
-                @extend .btn;
-                background-color: $secondary;
-                color: $text-color;
-                &:hover {
-                    background-color: $alternative;
+        height: 750px;
+        .equipo__descripcion {
+            padding: $spacing-medium-extra;
+            .buton {
+                .btn {
+                    width: 100px;
+                    padding: 5px 8px;
+                    margin: 0%
                 }
-            }
-            .btn__leermas {
-                @extend .btn;
-                background-color: $alternative;
-                color: $text-color;
-                font-weight: bold;
-                &:hover {
+                .btn__contacto {
+                    @extend .btn;
                     background-color: $secondary;
+                    color: $text-color;
+                    &:hover {
+                        background-color: $alternative;
+                    }
+                }
+                .btn__leermas {
+                    @extend .btn;
+                    background-color: $alternative;
+                    color: $text-color;
+                    font-weight: bold;
+                    &:hover {
+                        background-color: $secondary;
+                    }
                 }
             }
         }
-    }
-}
+    }    
+
 
 
 

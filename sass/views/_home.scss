@@ -27,7 +27,7 @@
         .detalle {
             .detalle__texto {
                 @include flex (row, center, center, 0);
-                @include size (400px, 300px);
+                @include size (600px, 340px);
                .detalle__descripcion {
                 text-align: justify;
                 }

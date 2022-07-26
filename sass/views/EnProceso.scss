@@ -1,0 +1,24 @@
+#proximamente {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: column;
+    background-color:$primary ;
+    .textprox {
+        text-align: center;
+        padding: 3rem;
+    }
+    .contentprox {
+        .imgprox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 634px;
+            flex-wrap: nowrap;
+            width: 600px;
+            align-content: stretch;            
+        }
+    }     
+}

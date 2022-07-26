@@ -1,0 +1,48 @@
+#artbody{
+    
+    h1 {
+        text-align: center;
+        color:black
+    }
+    .articulo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        .arttext {
+            height: 855px;
+            width: 900px;
+            text-align: justify;
+            color: black;
+            font-size: medium;
+            font-weight: bold; 
+            .p1 {
+                padding: 2rem 0;
+            } 
+            .p3 {
+                padding: 0 0 2rem 0;
+            }
+            .p4 {
+                padding: 2rem 0;
+            }
+            .p5 {
+                padding: 2rem 0;
+            }
+            .p6 {
+                padding: 2rem 0;
+            }
+            .p7 {padding: 2rem 0;
+            }
+            .p8 {padding: 2rem 0
+            }
+            .p9{
+            padding: 2rem 0
+            }
+            .p10{
+            padding: 2rem 0
+            }
+        }
+    }
+    
+}
